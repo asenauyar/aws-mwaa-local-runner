@@ -19,7 +19,9 @@ jobs:
       - run:
           name: "Say hello"
           command: "echo Hello, World!"
-      - slack/notify
+      - slack/notify:
+          event: pass
+          template: basic_success_1
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
