@@ -20,7 +20,7 @@ jobs:
           name: "Say hello"
           command: "echo Hello, World!"
       - slack/notify:
-          event: fail
+          event: pass
           template: basic_success_1
 
 # Orchestrate jobs using workflows
